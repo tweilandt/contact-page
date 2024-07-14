@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/contact-form-icon.svg" alt="Becv Icon">
+    </header>
+    <h1>Interested in our business pricing? </h1>
+    <h2>Fill out the form to view details and we’ll contact you as soon as possible.</h2>
+    <div>
+        <form method="post" autocomplete="on">
+            <div>
+                <label for="iname">Name</label>
+                <input type="text" name="nome" id="iname" placeholder="Ethan Johnson" minlength="3" maxlength="50" autocomplete="name" required>
+            </div>
+            <div>
+                <label for="iemail">Company Email</label>
+                <input type="email" name="email" id="iemail" minlength="6" maxlength="30" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="iciasize">Company Size</label>
+                <select name="ciasize" id="iciasize">
+                    <option value="1">50-100 employees</option>
+                    <option value="2">101-500 employess</option>
+                    <option value="3">501-1500 employees</option>
+                    <option value="4"> > 1500 employees</option>
+                </select>
+            </div>
+            <div>
+                <label for="isubj">Subject</label>
+                <select name="subj" id="isubj">
+                    <option value="1">Building Landing Page</option>
+                    <option value="2">Problems with my Page</option>
+                    <option value="3">Others</option>
+                </select>
+                <div>
+                    <label for="imsg">Message</label><br>
+                    <textarea name="msg" id="imsg" cols = "50" rows="10">
+                    </textarea>
+                </div>
+                <input type="submit" value="Contact Sales">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
